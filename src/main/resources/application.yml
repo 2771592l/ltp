@@ -1,0 +1,33 @@
+server:
+  ip: localhost
+  port: 9090
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/qing?serverTimezone=GMT%2b8
+    username: root
+    password: 123456
+  redis:
+    host: localhost
+    port: 6379
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+files:
+  upload:
+    path: E:\file\
+
+qywx:
+  mini:
+    agentSecret: DZY8vo8Kt5W-jS-huRQImZ78Ooyz8h9N8MURgSavV2k
+    corpId: ww5f3812f349d2c2d1
+
